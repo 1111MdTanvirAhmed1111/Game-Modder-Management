@@ -58,7 +58,7 @@ export default function Navigation() {
       </div>
 
       {/* Footer */}
-      <div className="p-4 border-t border-sidebar-border text-center text-xs text-sidebar-accent-foreground">
+      <div className="p-4 border-t border-sidebar-border text-center text-xs text-sidebar-accent-foreground flex">
         <ModeToggle />
         <p>সব ডেটা আপনার ব্রাউজারে সংরক্ষিত</p>
       </div>

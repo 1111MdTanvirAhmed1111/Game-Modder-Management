@@ -46,7 +46,7 @@ export default function DashboardPage() {
 
   return (
     <main className="flex-1">
-      <div className="p-8 space-y-8">
+      <div className="p-8 space-y-8 overflow-y-scroll">
         {/* Header */}
         <div className="flex items-center justify-between">
           <div>
