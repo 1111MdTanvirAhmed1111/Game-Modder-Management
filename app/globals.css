@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 98%;
+    --foreground: 10 15% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 10 15% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 10 15% 15%;
+    --primary: 260 95% 54%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 340 82% 52%;
+    --secondary-foreground: 0 0% 100%;
+    --accent: 40 95% 60%;
+    --accent-foreground: 10 15% 15%;
+    --success: 150 66% 45%;
+    --success-foreground: 0 0% 100%;
+    --warning: 35 100% 50%;
+    --warning-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --muted: 220 13% 91%;
+    --muted-foreground: 220 8% 45%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 260 95% 54%;
+    --chart-1: 260 95% 54%;
+    --chart-2: 340 82% 52%;
+    --chart-3: 40 95% 60%;
+    --chart-4: 150 66% 45%;
+    --chart-5: 35 100% 50%;
+    --radius: 0.75rem;
+    --sidebar-background: 10 20% 12%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 260 95% 64%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 10 20% 25%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 10 20% 22%;
+    --sidebar-ring: 260 95% 54%;
+  }
+  .dark {
+    --background: 10 15% 10%;
+    --foreground: 0 0% 98%;
+    --card: 10 20% 18%;
+    --card-foreground: 0 0% 98%;
+    --popover: 10 20% 18%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 260 95% 58%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 340 85% 56%;
+    --secondary-foreground: 0 0% 100%;
+    --accent: 40 95% 65%;
+    --accent-foreground: 10 15% 15%;
+    --success: 150 66% 50%;
+    --success-foreground: 0 0% 100%;
+    --warning: 35 100% 55%;
+    --warning-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --muted: 220 14% 28%;
+    --muted-foreground: 220 8% 65%;
+    --border: 10 20% 22%;
+    --input: 10 20% 22%;
+    --ring: 260 95% 58%;
+    --chart-1: 260 95% 58%;
+    --chart-2: 340 85% 56%;
+    --chart-3: 40 95% 65%;
+    --chart-4: 150 66% 50%;
+    --chart-5: 35 100% 55%;
+    --sidebar-background: 10 20% 12%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 260 95% 64%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 10 20% 25%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 10 20% 22%;
+    --sidebar-ring: 260 95% 58%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-poppins;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold;
+  }
+  h1 { @apply text-4xl; }
+  h2 { @apply text-2xl; }
+  h3 { @apply text-xl; }
+}
