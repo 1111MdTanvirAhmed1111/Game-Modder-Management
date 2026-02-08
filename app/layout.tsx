@@ -1,7 +1,7 @@
 import React from "react"
 import type { Metadata } from 'next'
 import { Poppins, Geist_Mono } from 'next/font/google'
-
+import { ThemeProvider } from "@/components/theme-provider"
 import './globals.css'
 import Navigation from '@/components/Navigation'
 
@@ -27,8 +27,15 @@ export default function RootLayout({
     <html lang="bn" className={poppins.variable}>
       <body className="font-poppins antialiased bg-background">
         <div className="flex h-screen">
+            <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
           <Navigation />
           {children}
+          </ThemeProvider>
         </div>
       </body>
     </html>

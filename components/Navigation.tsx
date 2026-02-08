@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { LayoutDashboard, List, Users, Hammer, Wallet, Pause } from 'lucide-react';
 import { cn } from '@/lib/utils';
-
+import {ModeToggle} from '@/components/ToggleBtn'
 export default function Navigation() {
   const pathname = usePathname();
 
@@ -59,6 +59,7 @@ export default function Navigation() {
 
       {/* Footer */}
       <div className="p-4 border-t border-sidebar-border text-center text-xs text-sidebar-accent-foreground">
+        <ModeToggle />
         <p>সব ডেটা আপনার ব্রাউজারে সংরক্ষিত</p>
       </div>
     </nav>
