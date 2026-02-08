@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="bn" className={poppins.variable}>
       <body className="font-poppins antialiased bg-background">
-        <div className="flex h-screen">
+        <div className="flex h-screen overflow-y-scroll">
             <ThemeProvider
             attribute="class"
             defaultTheme="system"
